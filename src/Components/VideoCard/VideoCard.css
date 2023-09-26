@@ -1,0 +1,77 @@
+.video-card
+{
+    position: relative;
+    width: 29.6rem;
+    height: 28.05rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1px rgb(48 48 48 / 54%);
+}
+
+.video-card:hover
+{
+    box-shadow: 0 0 25px 6px var(--offline-grey-color);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.video-card:not(:hover)
+{
+    transition: .5s ease-in-out;
+}
+
+.video-card-thumbnail-img
+{
+    width: 100%;
+    height: 16.6rem;
+    object-fit: cover;
+}
+
+.video-card-title
+{
+    padding: 0 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.videocard-options-btn
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 50%;
+    margin: 0.8rem 1.1rem 0 0;
+}
+
+.videocard-options-container
+{
+    position: absolute;
+    top: 5.2rem;
+    right: 1.1rem;
+    width: 23.6rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid var(--offline-grey-color);
+}
+
+.videocard-options
+{
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+.videocard-options:hover
+{
+    background-color: var(--grey);
+}

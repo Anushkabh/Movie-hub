@@ -1,0 +1,136 @@
+.video-page-container
+{
+    padding: 1rem 8.6rem;
+    display: flex;
+}
+
+.video-content-container
+{
+    width: 68%;
+    height: 100vh;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.video-content-container hr
+{
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.youtube-video-container
+{
+    width: 100%;
+    position: relative;
+}
+
+.youtube-video
+{
+    width: 100%;
+    height: 50rem;
+    overflow: auto;
+}
+
+.video-title
+{
+    text-align: left;
+}
+
+.video-info-and-options
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-info
+{
+    font-size: 14px;
+}
+
+.video-options-container
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.video-options
+{
+    padding: 1rem;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.video-options:hover
+{
+    background-color: var(--grey);
+}
+
+.video-options .options-icon
+{
+    margin: 0 6px 0 0;
+    font-size: 25px;
+}
+
+.video-options span
+{
+    padding-top: 4px;
+}
+
+.video-recommendation-container
+{
+    width: 32%;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.recommendation-item
+{
+    width: 100%;
+    height: 9.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media ONLY screen and (max-width:960px)
+{
+    .video-page-container
+    {
+        flex-direction: column;
+    }
+
+    .video-content-container
+    {
+        width: 100%;
+    }
+
+    .video-recommendation-container
+    {
+        width: 100%;
+        padding: 1rem 4rem;
+    }
+
+    .video-recommendation-container a, .recommendation-item, .recommendation-item-details h4
+    {
+        width: 100%;
+    }
+
+    .recommendation-item-details
+    {
+        width: 70%;
+    }
+}

@@ -1,0 +1,22 @@
+.individual-playlist-container
+{
+    min-height: calc(100vh - 107.23px);
+    grid-column: 2/3;
+    padding: 2rem 6rem 0 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width:1015px){
+    .individual-playlist-container
+    {
+        min-height: calc(100vh - 157.23px);
+    }
+}
+
+.individual-playlist-heading
+{
+    z-index: 2;
+    margin-bottom: 6rem;
+}
