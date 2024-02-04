@@ -5,4 +5,4 @@ Review Management: Users can write, edit, and delete reviews for movies, contrib
 Search Functionality: Implemented search functionality for movies, TV series, and people, enhancing the user's ability to discover content.
 Light and Dark Theme: Included for a personalized user experience, allowing users to choose between light and dark themes based on their preferences.
 
-Link : https://movie-hub-qlyn.vercel.app/movie/852445
+Link : https://movie-hub-qlyn.vercel.app/
