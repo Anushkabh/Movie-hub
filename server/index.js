@@ -5,6 +5,7 @@ import http from "http";
 import mongoose from "mongoose";
 import "dotenv/config";
 import routes from "./src/routes/index.js";
+import exp from "constants";
 
 const app = express();
 app.use(cors());
@@ -27,6 +28,6 @@ mongoose.connect(process.env.MONGODB_URL).then(() => {
   console.log({ err });
   process.exit(1);
 });
-module.exports = app;
+export default app;
 
 //test
