@@ -8,7 +8,12 @@ import routes from "./src/routes/index.js";
 import exp from "constants";
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: 'https://movie-hub-qlyn.vercel.app', // Your frontend URL
+  optionsSuccessStatus: 200 // Some legacy browsers choke on 204
+};
+app.use(cors(corsOptions));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
