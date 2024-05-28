@@ -7,17 +7,16 @@ import "dotenv/config";
 import routes from "./src/routes/index.js";
 import exp from "constants";
 
-const app = express();
-const corsOptions = {
-  origin: 'https://movie-hub-qlyn.vercel.app', // Your frontend URL
-  optionsSuccessStatus: 200 ,
-  credentials : true                       // Some legacy browsers choke on 204
-};
-app.use(cors(corsOptions));
 
+const app = express();
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+app.use("/api/v1", routes);
+
+const port = process.env.PORT || 5000;
 
 app.use("/api/v1", routes);
 
