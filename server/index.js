@@ -22,6 +22,9 @@ app.use(cookieParser());
 app.use("/api/v1", routes);
 
 const port = process.env.PORT || 5000;
+app.get("/", (req, res) => {
+  res.send("Welcome to Movie Hub API");
+});
 
 const server = http.createServer(app);
 
