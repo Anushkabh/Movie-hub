@@ -10,7 +10,8 @@ import exp from "constants";
 const app = express();
 const corsOptions = {
   origin: 'https://movie-hub-qlyn.vercel.app', // Your frontend URL
-  optionsSuccessStatus: 200 // Some legacy browsers choke on 204
+  optionsSuccessStatus: 200 ,
+  credentials : true                       // Some legacy browsers choke on 204
 };
 app.use(cors(corsOptions));
 
